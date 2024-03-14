@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udemy Js Practice</title>
+    ('https://fonts.googleapis.com/css2?family=Pacifico&family=REM:wght@500&display=swap');
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    body {
+      color: #244793;
+    }
+    .navcontainer {
+      background-color: #2d4a89;
+      align-items: center;
+      text-align: center;
+      height: 11vh;
+      color: whitesmoke;
+    }
+    .navcontainer h1 {
+      padding: 25px;
+      font-family: "Pacifico", cursive;
+      font-family: "REM", sans-serif;
+    }
+    /* Calculator procedure */
+    #calculator {
+      align-items: center;
+      text-align: center;
+
+      border: 0.6px solid black;
+      border-radius: 8px;
+      height: 13vw;
+      width: 28vw;
+      display: block;
+      margin: auto;
+      /* margin: 33px; */
+    }
+    #input-number {
+      font-size: 43px;
+      font-weight: 100;
+      color: #2d4a89;
+      width: 20vw;
+      height: 8vh;
+      border-width: 3px;
+      border-color: #2d4a89;
+      margin: 16px;
+    }
+    #calculator button {
+      background-color: #244793;
+      margin-left: 10px;
+    }
+    #calculator button:hover {
+      background-color: #3d517d;
+    }
+    #buttons {
+      /* display: grid;
+              grid-template-columns: repeat(minmax(autofi 1fr));
+              grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+              grid-gap: 10px; */
+      /* margin: 12px 30px; */
+      /* align-items: center; */
+      /* margin: auto;
+              display: block; */
+      display: flex;
+      /* flex-direction: row; */
+      /* flex-grow: 2px; */
+      /* flex-wrap: wrap; */
+      margin-left: 60px;
+      /* margin: auto; */
+      text-align: center;
+    }
+    /* Result section */
+    #results {
+      text-align: center;
+      border: 0.6px solid black;
+      border-radius: 8px;
+    }
+    #results h2 {
+      padding: 15px;
+      margin: 20px 12px;
+      color: #2d4a89;
+      /* font-family: "Pacifico", cursive; */
+      font-family: "REM", sans-serif;
+      font-weight: bolder;
+    }
+    /* Utility classes */
+    .btn {
+      /* display: #2d4a89; */
+      cursor: pointer;
+      /* width: 20px; */
+      width: 3.6rem;
+      height: 3.6rem;
+      /* color: white; */
+      padding: 0px 21px;
+      /* margin-left: 9px; */
+      /* align-items: center; */
+      /* align-content: center; */
+      /* text-align: center; */
+      font-size: xx-large;
+      /* color: #244793; */
+      /* background: #244793; */
+      border-radius: 1px;
+      /* background: #2d4a89; */
+    }
+    /* .btn:hover{
+              /* width: 3.8rem;
+              height: 3.8rem; }*/
+
+    /* .btn::after{
+              background-color: #244793
+              position: absolute;
+              display:inline-block;
+              height:100%;
+              width:100%;
+              top:0;
+              left:0;
+              opacity: 4 ;
+              z-index: -1;
+            }*/
+  </style>
+  <body>
+    <div class="navcontainer">
+      <h1>The Unconventional Calculator</h1>
+    </div>
+    <section id="calculator">
+      <input type="number" id="input-number" />
+      <div id="calc-action" class="btn">
+        <section id="buttons">
+          <button type="button" id="btn-add" class="btn">+</button>
+          <button type="button" id="btn-subtract" class="btn">-</button>
+          <button type="button" id="btn-multiply" class="btn">*</button>
+          <button type="button" id="btn-divide" class="btn">/</button>
+        </section>
+      </div>
+    </section>
+    <!-- Result area -->
+    <div id="results">
+      <h2 id="current-calculation"></h2>
+      <h2>Result: <span id="current-result"></span></h2>
+    </div>
+
+    <script src="vendor.js"></script>
+    <script src="2index.js"></script>
+    <!-- <script src="index.js"></script> -->
+  </body>
+</html>
